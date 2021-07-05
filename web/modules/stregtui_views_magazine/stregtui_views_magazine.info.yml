@@ -1,0 +1,7 @@
+name: Stregtui Views Magazine
+type: module
+description: Stregtui Views Magazine
+core_version_requirement: ^8.8 || ^9
+package: stregtui
+dependencies:
+  - image

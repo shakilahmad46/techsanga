@@ -1,0 +1,7 @@
+stregtui_blockbuilder_add_action:
+   route_name: stregtui_blockbuilder.admin.add
+   title: 'Add Block Builder'
+   route_parameters:
+        bid: '0'
+   appears_on:
+      - stregtui_blockbuilder.admin

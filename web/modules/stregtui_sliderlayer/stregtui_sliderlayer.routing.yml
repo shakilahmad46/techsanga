@@ -1,0 +1,123 @@
+stregtui_sl_group.admin:
+  path: '/admin/structure/stregtui_sliderlayer'
+  defaults:
+    _title: 'stregtui Group SliderLayer'
+    _controller: '\Drupal\stregtui_sliderlayer\Controller\GroupSliderController::stregtui_sl_group_list'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+stregtui_sl_group.admin.add:
+  path: '/admin/structure/stregtui_sliderlayer/group-form/{sid}'
+  defaults:
+    _title: 'Add Group Slider'
+    _form: '\Drupal\stregtui_sliderlayer\Form\GroupForm'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+stregtui_sl_group.admin.clone:
+  path: '/admin/structure/stregtui_sliderlayer/group-clone/{sid}'
+  defaults:
+    _title: 'Add Group Slider'
+    _form: '\Drupal\stregtui_sliderlayer\Form\GroupClone'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+stregtui_sl_group.admin.config:
+  path: '/admin/structure/stregtui_sliderlayer/config-global/{gid}'
+  defaults:
+    _title: 'Configuration of stregtui Slider Group'
+    _controller: '\Drupal\stregtui_sliderlayer\Controller\GroupSliderController::stregtui_sl_group_config'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+stregtui_sl_group.admin.config_save:
+  path: '/admin/structure/stregtui_sliderlayer/config-global/save'
+  defaults:
+    _title: 'Save configuration of stregtui Slider Group'
+    _controller: '\Drupal\stregtui_sliderlayer\Controller\GroupSliderController::stregtui_sl_group_config_save'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+stregtui_sl_group.admin.export:
+  path: '/admin/structure/stregtui_sliderlayer/group/export/{gid}'
+  defaults:
+    _title: 'Export'
+    _controller: '\Drupal\stregtui_sliderlayer\Controller\GroupSliderController::stregtui_sl_group_export'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+stregtui_sl_group.admin.import:
+  path: '/admin/structure/stregtui_sliderlayer/group/import/{gid}'
+  defaults:
+    _title: 'Import'
+    _form: '\Drupal\stregtui_sliderlayer\Form\ImportForm'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+stregtui_sl_group.admin.delete:
+  path: '/admin/structure/stregtui_sliderlayer/group/delete/{gid}/{sid}/{action}'
+  defaults:
+    _title: 'Delete item of stregtui Slider'
+    _form: '\Drupal\stregtui_sliderlayer\Form\DelForm'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+
+# stregtui_sl_group.admin.edit:
+#   path: '/admin/structure/stregtui_sliderlayer/edit/{sid}'
+#   defaults:
+#     _title: 'Edit Slider'
+#     _controller: '\Drupal\stregtui_sliderlayer\Controller\GroupSliderController::stregtui_sliderlayer_edit'
+#   requirements:
+#     _permission: 'administer stregtui sliderlayer'
+
+
+# List slider layer
+stregtui_sl_sliders.admin.list:
+  path: '/admin/structure/stregtui_sliderlayer/{gid}/sliders'
+  defaults:
+    _title: 'stregtui SliderLayer'
+    _controller: '\Drupal\stregtui_sliderlayer\Controller\SliderController::stregtui_sl_sliders_list'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+stregtui_sl_sliders.admin.form:
+  path: '/admin/structure/stregtui_sliderlayer/{gid}/sliders/{sid}/edit'
+  defaults:
+    _title: 'Edit Slider'
+    _controller: '\Drupal\stregtui_sliderlayer\Controller\SliderController::stregtui_sl_sliders_edit'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+stregtui_sl_sliders.admin.save:
+  path: '/admin/structure/stregtui_sliderlayer/sliders/save'
+  defaults:
+    _title: 'Edit Slider'
+    _controller: '\Drupal\stregtui_sliderlayer\Controller\SliderController::stregtui_sliderlayer_save'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+stregtui_sl_sliders.admin.duplicate:
+  path: '/admin/structure/stregtui_sliderlayer/slider-duplicate/{id}'
+  defaults:
+    _title: 'Slider Duplicate'
+    _form: '\Drupal\stregtui_sliderlayer\Form\SliderDuplicate'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+# File slider layer
+stregtui_sliderlayer.admin.upload:
+  path: '/admin/structure/stregtui_sliderlayer/upload'
+  defaults:
+    _title: 'Upload image of stregtui Slider'
+    _controller: '\Drupal\stregtui_sliderlayer\Controller\FileController::stregtui_sliderlayer_upload_file'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'
+
+stregtui_sliderlayer.admin.get_images_upload:
+  path: '/admin/structure/stregtui_sliderlayer/get_images_upload'
+  defaults:
+    _title: 'Save configuration of stregtui SliderLayer'
+    _controller: '\Drupal\stregtui_sliderlayer\Controller\FileController::get_images_upload'
+  requirements:
+    _permission: 'administer stregtui sliderlayer'

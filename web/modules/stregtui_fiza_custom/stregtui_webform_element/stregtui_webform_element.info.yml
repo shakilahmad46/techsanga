@@ -1,0 +1,11 @@
+name: 'Stregtui Webform Element'
+type: module
+package: 'stregtui'
+description : Stregtui Webform Elements
+
+dependencies:
+  - 'drupal:webform'
+
+version: '9.x'
+project: 'stregtui_webform_element'
+core_version_requirement: ^8.8 || ^9

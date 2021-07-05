@@ -1,0 +1,15 @@
+stregtuithemer.admin.customize_save:
+   path: 'admin/stregtuithemer_customize/save'
+   defaults:
+      _title: 'Save Customize'
+      _controller: '\Drupal\stregtuithemer\Controller\CustomizeController::save'
+   requirements:
+      _permission: 'administer stregtui_customize'
+
+stregtuithemer.admin.customize_preview:
+   path: 'admin/stregtuithemer_customize/preview'
+   defaults:
+      _title: 'Preview Customize'
+      _controller: '\Drupal\stregtuithemer\Controller\CustomizeController::preview'
+   requirements:
+      _permission: 'administer stregtui_customize preview'

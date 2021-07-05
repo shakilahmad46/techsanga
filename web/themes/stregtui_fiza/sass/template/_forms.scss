@@ -1,0 +1,439 @@
+.form-control {
+  box-shadow: none;
+}
+
+.search-region{
+  position: absolute;
+  right: 20px;
+  top: 3px;
+}
+
+#user-login-form {
+  .form-item{
+    label{
+      width: 100%;
+    }
+    input{
+      width: 100%;
+    }
+  }
+  ul {
+    width: 100%;
+    padding: 10px 0 30px;
+      > li{
+      width: 49%;
+      float: left;
+      text-align: center;
+      &:first-child{
+        margin-right: 2%;
+      }
+      a{
+        width: 100%;
+        display: inline-block;
+        float: none;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 10px 5px;
+      }
+    }  
+  }
+}
+
+#user-login {
+  ul {
+    margin: 0 0 5px;
+    li {
+      margin: 0;
+    }
+  }
+  li.openid-link {
+    background: none;
+  }
+}
+
+#search-form{
+	.panel {
+		border: none;;
+		box-shadow: none;
+	}
+	.panel-default > .panel-heading {
+		border-bottom: none;
+	}
+}
+
+.hide-label label {
+  background: none;
+  clip: rect(1px);
+}
+.exposed-filters .form-item {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+#article-admin-filter ul {
+  padding: .5em 0;
+  li {
+    list-style: none;
+  }
+}
+#edit-operation-wrapper select {
+  margin: .5em;
+}
+div.resizable-textarea {
+  textarea {
+    margin-top: 0;
+    border: 1px solid $border-color;
+  }
+}
+.search-advanced .criterion {
+  float: none;
+  margin: 0 5px;
+}
+#edit-keywords-fieldset .form-item {
+  &:first-child {
+    margin-top: 5px;
+  }
+}
+#user-admin-filter ul {
+  li {
+    list-style: none;
+  }
+}
+.field-type-text-long fieldset {
+  padding: 10px 0;
+  border: $border-color;
+  .form-item {
+    margin: 0;
+    padding: 0 0 0 15px;
+  }
+}
+#comment-form {
+	label {
+		display: inline-block;
+		font-size: 18px;
+		font-weight: normal;
+		margin-bottom: 5px;
+	}
+}
+#contact-site-form{
+  .form-checkbox{
+    margin-left: 0;
+  }
+}
+
+#comment-form-wrapper{
+  .form-item{
+    label{
+      min-width: 120px;
+      display: inline-block;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+}
+
+#search-block-form{
+  position: relative;
+  input.form-submit{
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: $theme-color;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 600;
+    @include border-radius(0);
+    height: 34px;
+    @include transition(all 0.35s);
+    &:hover{
+      background: $black!important;
+    }
+  }
+}
+
+.contact-message-form{
+  margin: 0 auto;
+  .row{
+    margin-left: -15px!important;
+    margin-right: -15px!important;
+  }
+  #edit-name, #edit-mail, .js-form-item-mail{
+    height: 45px;
+    line-height: 45px;
+    background: none;
+    padding-left: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .form-item{
+    margin-bottom: 20px;
+    color: $text-color;
+    label{
+      font-size: 12px;
+      display: block;
+      text-transform: uppercase;
+    }
+    #edit-copy{
+      float: left;
+      margin-right: 5px;
+    }
+    input[type='text'], input[type='email'], textarea{
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      position: relative;
+      @include transition(all 0.35s);
+      height: 45px;
+      background: none;
+      -webkit-box-shadow: none!important;
+      -ms-box-shadow: none!important;
+      -o-box-shadow: none!important;
+      box-shadow: none!important;
+      padding-left: 15px;
+      &:focus{
+        border-color: $theme-color;
+      }
+    }
+    textarea{
+      height: auto;
+      padding-top: 15px;
+    }
+  }
+  .form-item-copy{
+    margin-bottom: 10px!important;
+  }
+  div[id*='edit-actions']{
+    width: 100%;
+    text-align: right;
+    @include clearfix();
+    input{
+      border: none;
+      @include box-shadow(none);
+    }
+  }
+  #edit-preview{
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    background: $theme-color;
+    font-weight: 600;
+    @include border-radius(0);
+    height: 45px;
+    @include transition(all 0.35s);
+    margin-right: 20px;
+    &:hover{
+      background: $black!important;
+    }
+  }
+  #edit-preview{
+    display: none;
+  }
+}
+
+.text-light{
+  .contact-message-form{
+    #edit-name, #edit-mail, input[type='text'], input[type='email'], textarea{
+      background: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3)!important;
+      color: $white;
+      &::-webkit-input-placeholder {
+        color: $white;
+        text-transform: capitalize;
+      }
+      &:-moz-placeholder {
+        color: $white;
+        text-transform: capitalize;
+        @include opacity(1);
+      }
+      &::-moz-placeholder {  
+        color: $white;
+        text-transform: capitalize;
+        @include opacity(1);
+      }
+      &:-ms-input-placeholder {  
+        color: $white;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+.block-system{
+  .contact-message-form{
+    margin-bottom: 60px;
+  }
+}
+
+.webform-submission-form{
+  .form-content-inner{
+    max-width: 900px;
+    margin: 0 -15px;
+    padding: 0;
+  }
+  .form-item{
+    margin-bottom: 20px;
+    position: relative;
+    @include clearfix();
+    label{
+      font-family: $font-second;
+      font-size: 14px;
+      font-weight: 600;
+      color: $theme-color-second;
+    }
+    input, textarea{
+      width: 100%;
+      background: none;
+      border: none;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+      padding-left: 15px;
+      @include box-shadow(none);
+    }
+    input{
+      line-height: 30px;
+    }
+  }
+  .form-actions{
+    padding: 0 15px;
+    text-align: left;
+    .webform-button--submit{
+      @include transition(all 0.3s);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 0 20px;
+      position: relative;
+      display: inline-block;
+      line-height: 38px;
+      z-index: 1;
+      @include border-radius(30px);
+      text-transform: uppercase;
+      font-family: $font-second;
+      background: $theme-color;
+      color: $white;
+      letter-spacing: 1px;
+      border: none;
+      &:hover{
+        background: lighten($theme-color, 15%);
+      }
+    }
+  }
+  &.webform-submission-contact-form{
+    .form-item{
+      &:after{
+        font-family: "FontAwesome";
+        position: absolute;
+        bottom: 12px;
+        left: 25px;
+        z-index: 1;
+        background: none;
+        font-size: 16px;
+        color: $black;
+        line-height: 1;
+      }
+      &.form-item-name{
+        &:after{
+          content: "\f2c0";
+        }
+        input{
+          padding-left: 35px;
+        }
+      }
+      &.form-item-email{
+        &:after{
+          content: "\f003";
+        }
+        input{
+          padding-left: 35px;
+        }
+      }
+      &.form-item-phone{
+        &:after{
+          content: "\f095";
+        }
+        input{
+          padding-left: 35px;
+        }
+      }
+      &.form-item-date{
+        &:after{
+          content: "\f073";
+        }
+        input{
+          padding-left: 35px;
+        }
+      }
+      &.form-item-time{
+        &:after{
+          content: "\f017";
+        }
+        input{
+          padding-left: 35px;
+        }
+      }
+      &.form-item-subject{
+        &:after{
+          content: "\f035"; 
+        }
+        input{
+          padding-left: 35px;
+        }
+      }
+    }
+  }
+}
+
+.text-light{
+  .webform-submission-form{
+    .form-item{
+      &:after{
+        color: $white;
+      }
+      input, textarea{
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        color: $white;
+        &::-webkit-input-placeholder {
+          color: $white;
+          text-transform: capitalize;
+        }
+        &:-moz-placeholder {
+          color: $white;
+          text-transform: capitalize;
+          @include opacity(1);
+        }
+        &::-moz-placeholder {  
+          color: $white;
+          text-transform: capitalize;
+          @include opacity(1);
+        }
+        &:-ms-input-placeholder {  
+          color: $white;
+          text-transform: capitalize;
+        }
+      }
+    }
+    .form-actions{
+      input.form-submit{
+        border-color: $white;
+        color: $white;
+        &:hover{
+          color: $black;
+          background: $white;
+        }
+      }
+    }
+    label{
+      color: $white;
+    }
+  }
+}
+
+.style-2{
+  .webform-submission-form{
+    @include box-shadow(0px 5px 15px 0px rgba(55, 77, 123, 0.2));
+    position: relative;
+    padding: 30px;
+    background: rgba(255, 255, 255, 1);
+  }
+}
