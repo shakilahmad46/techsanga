@@ -23,35 +23,6 @@
 /web/sites/*/tmp
 /sites/*/cache
 
-# Ignore testing related files
-/web/sites/simpletest
-
-# Ignore drupal core (if not versioning drupal sources)
-/web/core
-/vendor
-/web/modules/README.txt
-/web/profiles/README.txt
-/web/themes/README.txt
-/web/sites/README.txt
-/web/sites/example.sites.php
-/web/sites/example.settings.local.php
-/web/sites/development.services.yml
-/web/.csslintrc
-/web/.editorconfig
-/web/.eslintignore
-/web/.eslintrc.json
-/web/.gitattributes
-/web/.ht.router.php
-/web/.htaccess
-/web/autoload.php/web
-/web/example.gitignore
-/web/index.php
-/web/INSTALL.txt
-/web/LICENSE.txt
-/web/README.txt
-/web/robots.txt
-/web/update.php
-/web/web.config
 
 # End of https://www.toptal.com/developers/gitignore/api/drupal8
 web/sites/default/settings.php
