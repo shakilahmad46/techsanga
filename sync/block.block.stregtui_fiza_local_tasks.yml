@@ -1,0 +1,22 @@
+uuid: df488bf3-5cb5-47ed-aff0-fa0d92a8be04
+langcode: en
+status: true
+dependencies:
+  theme:
+    - stregtui_fiza
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: stregtui_fiza_local_tasks
+theme: stregtui_fiza
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

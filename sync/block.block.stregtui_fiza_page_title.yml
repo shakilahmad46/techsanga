@@ -1,0 +1,20 @@
+uuid: 79a7a6fd-8ac0-4f7e-8fcb-edd050ffa48d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - stregtui_fiza
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: stregtui_fiza_page_title
+theme: stregtui_fiza
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

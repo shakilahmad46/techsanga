@@ -1,0 +1,22 @@
+uuid: 7988dc13-3622-4178-b276-192dd9c9e18f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - stregtui_fiza
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: stregtui_fiza_help
+theme: stregtui_fiza
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 27ad4959-6704-4636-8847-ca2e139b7a9b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - stregtui_fiza
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: stregtui_fiza_local_actions
+theme: stregtui_fiza
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

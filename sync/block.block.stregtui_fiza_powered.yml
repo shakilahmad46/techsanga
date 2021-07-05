@@ -1,0 +1,22 @@
+uuid: 5cff31db-463e-4b24-8aa3-d601d744de16
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stregtui_fiza
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: stregtui_fiza_powered
+theme: stregtui_fiza
+region: offcanvas
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
