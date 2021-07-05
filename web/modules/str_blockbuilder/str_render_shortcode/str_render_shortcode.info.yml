@@ -1,0 +1,7 @@
+name: StregtUI Render Shortcode
+type: module
+description: stregtuiBlock Builder module.
+package: stregtui
+version: '8.x-1.0'
+core_version_requirement: ^8.8 || ^9
+project: 'str_render_shortcode'
