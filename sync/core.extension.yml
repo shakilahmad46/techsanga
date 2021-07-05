@@ -38,6 +38,7 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  str_render_shortcode: 0
   stregtui_blockbuilder: 0
   stregtui_hook_themer: 0
   stregtui_sliderlayer: 0
