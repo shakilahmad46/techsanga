@@ -1,7 +1,0 @@
-name: Gva Render Shortcode
-type: module
-description: stregtuiBlock Builder module.
-package: stregtui
-version: '8.x-1.0'
-core: '8.x'
-project: 'gva_render_shortcode'
