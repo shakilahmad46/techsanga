@@ -1,0 +1,170 @@
+body{
+  div.body-page{
+    background: $white;
+  }
+  &.boxed{ 
+    max-width: 1440px;  
+    margin: 0 auto;
+    @include box-shadow(0px 5px 5px rgba(0, 0, 0, 0.15));
+    background-color: #E2E7EA;
+  }
+  &.boxed-v2{
+    background: #F3F1EB;
+    .body-page-inner{
+       background: none;
+      padding: 0 35px;
+      margin-top: 35px;
+      @media(max-width: $screen-sm-max){
+        padding: 0 30px;
+        margin-top: 30px;
+      }
+      @media(max-width: $screen-xs-max){
+        padding: 0 15px;
+        margin-top: 15px;
+      }
+      .body-page-content{
+        background: none;
+        @include box-shadow(0 0 10px rgba(10, 10, 10, 0.07));
+        .gva-body-page{
+          background: $white;
+        }
+      }
+    }
+  }
+}
+.language-box{
+  .links{
+    > li{
+      margin-right: 10px;
+      @include opacity(0.6);
+      line-height: 1;
+      margin-top: 5px;
+      float: right;
+      &.is-active{
+        @include opacity(1);
+      }
+    }
+  }
+}
+
+.area{
+  &.slideshow_content{
+    .block{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.area-panel{
+  padding: 30px 0;
+}
+
+.header-right{
+  .block{
+    margin-bottom: 0;
+  }
+}
+
+.promotion{
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#page-main-content{
+  min-height: 360px;
+  @media(max-width: $screen-sm-max){
+    min-height: 100px;
+  }
+}
+
+.main-menu{
+  .area-main-menu{
+    .area-inner{
+      .block{
+        margin-bottom: 0;
+      }
+    }  
+  }
+}  
+
+.sidebar{
+  position: relative;
+}
+
+
+.footer{
+  line-height: 28px;
+  background: $theme-color-second;
+  color: #fff;
+  font-size: 14px;
+  h1, h2, h3, h4, h5, h6{
+    color: $white;
+  }
+  a{
+    color: #fff;
+    &:hover{
+      color: $theme-color;
+    }
+  }
+  p{
+    margin-bottom: 10px;
+  }
+  .footer-top{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .before-footer{
+      padding: 30px 0;
+    }
+  }
+  .footer-center{
+    padding: 90px 0 10px;
+  }
+  .block{
+    .block-title{
+      span{
+        color: $white;
+      }
+    }
+  }
+}
+
+body.footer-white{
+  .footer, .copyright{
+    background: #fff;
+    color: #222;
+    a{
+      color: #222;
+      &:hover, &:focus{
+        color: $theme-color;
+      }
+    }
+  }
+  .before-footer{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)!important;
+  }
+  .footer{
+    .block{
+      .block-title{
+        color: $headings-color;
+        span{
+          color: $headings-color;
+        }
+      }
+    }
+  }
+}
+
+.copyright{
+  background: $theme-color-second;
+  color: #ccc;
+  a{
+    &:hover{
+      color: $theme-color;
+    }
+  }
+  .copyright-inner{
+    padding: 30px 0;
+    .block{
+      margin: 0;
+    }
+  }
+}

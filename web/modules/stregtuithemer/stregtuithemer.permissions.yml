@@ -1,0 +1,7 @@
+administer stregtui_customize:
+  title: 'Administer stregtuiCustomize'
+  description: 'Administer stregtuiCustomize.'
+
+administer stregtui_customize preview:
+   title: 'Administer stregtuiCustomize Preview'
+   description: 'Administer stregtuiCustomize Preview.'

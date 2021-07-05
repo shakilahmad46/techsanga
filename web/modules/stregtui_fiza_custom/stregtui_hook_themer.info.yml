@@ -1,0 +1,7 @@
+type: module
+name : Stregtui Fiza Themer
+description : Stregtui Fiza Themer
+package: stregtui
+project: 'stregtui_hook_themer'
+version: '9.x'
+core_version_requirement: ^8.8 || ^9

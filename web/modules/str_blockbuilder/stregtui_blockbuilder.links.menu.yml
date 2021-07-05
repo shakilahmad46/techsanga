@@ -1,0 +1,5 @@
+stregtui_blockbuilder.admin:
+  title: 'stregtuiblockbuilder'
+  description: 'List of block builder items'
+  parent: system.admin_structure
+  route_name: stregtui_blockbuilder.admin

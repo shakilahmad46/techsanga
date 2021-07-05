@@ -1,0 +1,6 @@
+stregtui_sl_group.admin:
+  title: 'stregtui Slider Layer'
+  description: 'List of slider items'
+  parent: system.admin_structure
+  route_name: stregtui_sl_group.admin
+

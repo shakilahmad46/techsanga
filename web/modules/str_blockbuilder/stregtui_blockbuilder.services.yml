@@ -1,0 +1,6 @@
+services:
+  plugin.manager.gbbshortcode:
+    class: Drupal\stregtui_blockbuilder\Shortcode\ShortcodePluginManager
+    parent: default_plugin_manager
+  gbbshortcode:
+    class: Drupal\stregtui_blockbuilder\Shortcode\ShortcodeService

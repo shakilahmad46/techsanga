@@ -1,0 +1,318 @@
+.topbar{
+  background: $theme-color-second;
+  font-size: 12px;
+  padding: 12px 0;
+  margin-top: -1px;
+  color: #cecece;
+  .topbar-inner{
+    position: relative;
+    padding-right: 30px;
+    i{
+      font-size: 14px;
+      color: #cecece;
+      &:hover{
+        color: $theme-color;
+      }
+    }
+    .block{
+      margin: 0!important;
+    }
+  }
+}
+
+.language-box{
+  .links{
+    > li{
+      margin-right: 10px;
+      @include opacity(0.6);
+      line-height: 1;
+      margin-top: 5px;
+      float: right;
+      &.is-active{
+        @include opacity(1);
+      }
+    }
+  }
+}
+
+header{
+  margin-top: 1px;
+  .header-main{
+    padding: 0;
+    background: $white; 
+  }
+  .site-branding-logo{
+    padding: 5px 0 5px;
+    display: inline-block;
+    width: auto;
+    img{
+      max-height: 60px;
+    }
+  }
+  .gva-search-region{
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      margin-top: -13px;
+      z-index: 9;
+      @media(max-width: $screen-sm-max){
+        right: 75px!important;
+      }
+      .icon{
+        font-size: 14px;
+        color: $black;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      .search-content{ 
+        display: none;
+        width: 305px;
+        position: absolute;
+        top: 43px;
+        right: 0;
+        margin-top: -1px;
+        z-index: 99;
+        background: $white;
+        padding: 20px;
+        @include box-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
+        input#edit-keys{
+          height: 35px;
+          padding: 5px;
+          border: 1px solid $border-color;
+          background: none;
+          width: 168px;
+        }
+        #edit-submit{
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 1;
+        }
+        #edit-actions{
+          margin: 0!important;
+          padding: 0!important;
+        }
+      }
+      &.show{
+        .search-content{
+          display: block;
+        }
+      }
+    }
+  .block{
+    overflow: visible;
+    margin-bottom: 0;
+  }
+  .header-info{
+    .icon{
+      @include size(40px, 40px);
+      float: left;
+      font-size: 30px;
+    }
+    .content-inner{
+      padding-left: 45px;
+      .title{
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $black;
+        font-family: $font-second;
+      }
+      .desc{
+        font-size: 14px;
+        color: #999999;
+      }
+    }
+  }
+}
+
+header.header-v1{
+  position: relative;
+  background: $white;
+  .search-region{
+    right: 5px!important;
+    i{
+      color: $theme-color;
+    }
+  }
+  .site-branding-logo{
+    padding-top: 12px;
+  }
+  .header-main{
+    z-index: 99;
+    padding: 5px 0;
+  }
+  .main-menu{
+    @include clearfix();
+    z-index: 99;
+    .navigation{
+      position: static;
+      .gva_menu{
+        float: right;
+        position: static;
+        > li{
+          > a {
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+  .stuck{
+    background: $white;
+  }  
+}
+
+header.header-v3{
+  .header-main{
+    .header-top{
+      padding: 20px 0;
+    }
+    .header-bottom{
+      background: $theme-color-second;
+      .main-menu{
+        position: relative;
+        @include clearfix();
+        z-index: 99;
+        .navigation .gva_menu{
+          width: 100%;
+          > li{
+            > a {
+              color: $white;
+              position: relative;
+              &:after{
+                content: '';
+                @include size(1px, 20px);
+                background: rgba(255, 255, 255, 0.2);
+                position: absolute;
+                top: 50%;
+                margin-top: -10px;
+                right: 0;
+                z-index: 1;
+              }
+              &:hover{
+                color: $theme-color;
+              }
+            }
+            &:last-child{
+              a:after{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .gva-search-region{
+        right: 15px;
+        .icon{
+          color: $white;
+        }
+      }
+    }
+  }
+  @media(max-width: 400px){ 
+    .header-right{
+      display: none!important;
+    }
+  }
+  #menu-bar span{
+    background: $white;
+  }
+}
+
+header.header-v2{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  margin-top: 2px;
+  background: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
+  @media(max-width: 991px){
+    position: static;
+    background: #222;
+  }
+  .header-inner{
+    padding-right: 30px;
+    position: relative;
+  }
+  .header-main{
+    position: relative;
+    z-index: 9;
+    background: none;
+  }
+  .site-branding-logo{
+    padding-top: 12px;
+  }
+  #menu-bar span{
+    background: $white;
+  }
+  .navigation .gva_menu{
+    float: right;
+    position: static;
+     > li > a{
+      color: $white;
+      &:hover, &:focus{
+        color: $theme-color;
+      }
+    }
+  }
+  .gva-search-region{
+    i{
+      color: $white;
+    }
+  }
+  .stuck{
+    background: #303030;
+  }
+}
+
+header.header-v4{
+  position: relative;
+  .header-inner{
+    padding-right: 30px;
+  }
+  @media (min-width: 992px){
+    .navigation {
+      position: static;
+      clear: both;
+    }
+  }
+  .site-branding-logo{
+    padding-top: 10px;
+  }
+  .header-main{
+    position: relative;
+    z-index: 99;
+  }
+  .gva_menu{
+    float: right;
+    position: static;
+  }
+  .stuck{
+    background: #fff;
+  }
+}
+.stuck {
+  position:fixed!important;
+  top: 0;
+  left: 0;
+  z-index: 99!important;
+  width: 100%;
+  @include box-shadow(0 0 5px 5px rgba(0, 0, 0, 0.1));
+  @include transition(all 0.35s);
+}
+@media(min-width: $screen-md-max){
+  .sticky-is-hidden{
+    .stuck{
+      top: -200px;
+    }
+  }
+  .sticky-is-show .stuck{
+    @include box-shadow(0 1px 12px 0 rgba(0, 0, 0, 0.1));
+    top: 0;
+  }
+}

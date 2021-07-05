@@ -1,0 +1,111 @@
+stregtui_blockbuilder.admin:
+  path: '/admin/structure/stregtui_blockbuilder'
+  defaults:
+    _title: 'stregtuiBlock Builder'
+    _controller: '\Drupal\stregtui_blockbuilder\Controller\GBBAdminController::stregtui_blockbuilder_list'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.add:
+  path: '/admin/structure/stregtui_blockbuilder/form/{bid}'
+  defaults:
+    _title: 'Add stregtuiBlock Builder'
+    _form: '\Drupal\stregtui_blockbuilder\Form\AddForm'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.add_popup:
+  path: '/admin/structure/stregtui_blockbuilder/add_popup/{random}'
+  defaults:
+    _title: 'Add stregtuiBlock Builder'
+    _form: '\Drupal\stregtui_blockbuilder\Form\AddFormPopup'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.duplicate_popup:
+  path: '/admin/structure/stregtui_blockbuilder/duplicate_popup/{bid}/{random}'
+  defaults:
+    _title: 'Add stregtuiBlock Builder'
+    _form: '\Drupal\stregtui_blockbuilder\Form\DuplicateFormPopup'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.import_popup:
+  path: '/admin/structure/stregtui_blockbuilder/import_popup/{bid}'
+  defaults:
+    _title: 'Add stregtuiBlock Builder'
+    _form: '\Drupal\stregtui_blockbuilder\Form\ImportFormPopup'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.import:
+  path: '/admin/structure/stregtui_blockbuilder/import/{bid}'
+  defaults:
+    _title: 'Import stregtuiBlock Builder'
+    _form: '\Drupal\stregtui_blockbuilder\Form\ImportForm'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.edit:
+  path: '/admin/structure/stregtui_blockbuilder/edit/{bid}'
+  defaults:
+    _title: 'Edit stregtuiBlock Builder'
+    _controller: '\Drupal\stregtui_blockbuilder\Controller\GBBAdminController::stregtui_blockbuilder_edit'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.delete:
+  path: '/admin/structure/stregtui_blockbuilder/delete/{bid}'
+  defaults:
+    _title: 'Delete stregtuiBlock Builder'
+    _form: '\Drupal\stregtui_blockbuilder\Form\DelForm'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.delete_popup:
+  path: '/admin/structure/stregtui_blockbuilder/delete_popup/{bid}/{random}'
+  defaults:
+    _title: 'Delete stregtuiBlock Builder'
+    _form: '\Drupal\stregtui_blockbuilder\Form\DelFormPopup'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.save:
+  path: '/admin/structure/stregtui_blockbuilder/save'
+  defaults:
+    _title: 'Save configuration of stregtuiBlockBuilder'
+    _controller: '\Drupal\stregtui_blockbuilder\Controller\GBBAdminController::stregtui_blockbuilder_save'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.get_images_upload:
+  path: '/admin/structure/stregtui_blockbuilder/get_images_upload'
+  defaults:
+    _title: 'Save configuration of stregtuiBlockBuilder'
+    _controller: '\Drupal\stregtui_blockbuilder\Controller\GBBAdminController::get_images_upload'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.export:
+  path: '/admin/structure/stregtui_blockbuilder/export/{bid}'
+  defaults:
+    _title: 'Save configuration of stregtuiBlockBuilder'
+    _controller: '\Drupal\stregtui_blockbuilder\Controller\GBBAdminController::stregtui_blockbuilder_export'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.clone:
+  path: '/admin/structure/stregtui_blockbuilder/clone/{bid}'
+  defaults:
+    _title: 'Clone stregtuiBlock Builder'
+    _form: '\Drupal\stregtui_blockbuilder\Form\CloneForm'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'
+
+stregtui_blockbuilder.admin.upload:
+  path: '/admin/structure/stregtui_blockbuilder/upload'
+  defaults:
+    _title: 'Save configuration of stregtuiBlockBuilder'
+    _controller: '\Drupal\stregtui_blockbuilder\Controller\GBBAdminController::stregtui_upload_file'
+  requirements:
+    _permission: 'administer stregtuiblockbuilder'

@@ -1,0 +1,9 @@
+name: stregtuiBlock Builder v2
+type: module
+description: stregtuiBlock Builder module.
+dependencies:
+package: stregtui
+version: '9.x'
+core_version_requirement: ^8.8 || ^9
+project: 'stregtui_blockbuilder'
+datestamp: 1439548441

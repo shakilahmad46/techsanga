@@ -1,0 +1,10 @@
+name: stregtuiThemer
+type: module
+description: stregtuiThemer module.
+# core: 8.x
+package: stregtui
+# Information added by Drupal.org packaging script on 2015-08-14
+version: '8.x-1.0'
+core_version_requirement: ^8.8 || ^9
+project: 'Stregtuithemer'
+datestamp: 1439548441
