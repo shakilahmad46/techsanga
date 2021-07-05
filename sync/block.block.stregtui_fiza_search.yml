@@ -1,0 +1,23 @@
+uuid: e24345f9-cde8-4c9a-9f9b-20962acdb991
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - stregtui_fiza
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: stregtui_fiza_search
+theme: stregtui_fiza
+region: offcanvas
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: node_search
+visibility: {  }

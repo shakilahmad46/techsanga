@@ -1,0 +1,22 @@
+uuid: c74fa77a-c5ef-47d9-b7c4-2455786c77a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stregtui_fiza
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: stregtui_fiza_content
+theme: stregtui_fiza
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

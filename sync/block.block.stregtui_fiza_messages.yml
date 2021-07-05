@@ -1,0 +1,22 @@
+uuid: f1fb2b33-e363-440d-a429-43aa9bdbf2eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stregtui_fiza
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: stregtui_fiza_messages
+theme: stregtui_fiza
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
